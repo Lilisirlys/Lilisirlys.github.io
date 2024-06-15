@@ -1,0 +1,75 @@
+body {
+    background-color: violet; /* Color de fondo violeta claro */
+    padding-top: 20px;
+}
+
+/* Estilos del encabezado */
+.jumbotron {
+    background-color: #ccc; /* Cambiar el fondo del jumbotron a gris */
+    color: #fff;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.jumbotron h1 {
+    font-size: 3.5rem;
+    color: black; /* Cambiar el color del título a negro */
+}
+
+.jumbotron p {
+    font-size: 1.5rem;
+    color: black; /* Cambiar el color del texto a negro */
+}
+
+/* Estilos para los títulos de sección */
+#pizzaForm h2, #pizzaList h2 {
+    color: #333; /* Cambiar el color de los títulos a gris oscuro */
+    margin-bottom: 20px;
+}
+
+/* Estilos para los botones */
+.btn-primary {
+    background-color: #ccc; /* Cambiar el fondo del botón a gris */
+    border-color: #ccc; /* Cambiar el borde del botón a gris */
+    color: #000; /* Cambiar el color del texto del botón a negro */
+}
+
+.btn-primary:hover {
+    background-color: #999; /* Color más oscuro al pasar el ratón */
+    border-color: #999;
+}
+
+/* Estilos para las tarjetas de lista de pizzas */
+.list-group-item {
+    background-color: #fff;
+    border-color: #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 10px;
+}
+
+.list-group-item img {
+    max-width: 100px;
+    float: left;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+/* Estilo para el formulario */
+#addPizzaForm {
+    max-width: 400px;
+    margin-bottom: 30px;
+}
+
+/* Ajustes responsivos para pantallas pequeñas */
+@media (max-width: 576px) {
+    .jumbotron h1 {
+        font-size: 2.5rem;
+    }
+
+    .jumbotron p {
+        font-size: 1.2rem;
+    }
+}

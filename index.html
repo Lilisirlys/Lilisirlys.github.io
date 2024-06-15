@@ -1,0 +1,86 @@
+<html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiliPizzas</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
+    <style>
+        .pizza-image {
+            max-width: 100%;
+            height: auto;
+        }
+        .small-image {
+            position: absolute;
+            top: 10px;
+            right: 40px; /* Ajustado para desplazar más hacia la derecha */
+            width: 100px;
+            height: auto;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron text-center">
+            <h1 class="display-4">LiliPizzas</h1>
+            <p class="lead">¡Bienvenidos a LiliPizzas! Las mejores pizzas de la ciudad.</p>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <img src="https://s.tmimgcdn.com/scr/800x500/305000/cute-pizza-cat-vector-cartoon-style_305079-original.jpg" alt="Pizza" class="pizza-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6Fana-prL66wcNzHTjssY9ZxMVkrjtdIFsMYU4DpXrNoS7bzzMiCIzDulesEktSejurE&usqp=CAU" alt="Small Image" class="small-image">
+            </div>
+            <div class="col-md-6">
+                <div id="pizzaForm">
+                    <h2>Agregar Pizza</h2>
+                    <form id="addPizzaForm">
+                        <div class="form-group">
+                            <label for="pizzaName">Nombre de la Pizza</label>
+                            <select class="form-control" id="pizzaName">
+                                <option value="Spiderman">Spiderman</option>
+                                <option value="Batman">Batman</option>
+                                <option value="Superman">Superman</option>
+                                <option value="Wonder Woman">Wonder Woman</option>
+                                <option value="Iron Man">Iron Man</option>
+                                <option value="Gato niño">Gato niño</option>
+                                <!-- Puedes añadir más opciones según sea necesario -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="pizzaType">Tipo de Pizza</label>
+                            <select class="form-control" id="pizzaType">
+                                <option value="Cuatro Quesos">Cuatro Quesos</option>
+                                <option value="Champiñones">Champiñones</option>
+                                <option value="Marinara">Marinara</option>
+                                <option value="Napolitana">Napolitana</option>
+                                <option value="Hawaiana">Hawaiana</option>
+                                <option value="Pepperoni">Pepperoni</option>
+                                
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Agregar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="pedidoList" class="mt-4">
+            <h2>Pedidos</h2>
+            <ul class="list-group" id="pedidoItems">
+                <!-- Los pedidos se agregarán aquí -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
